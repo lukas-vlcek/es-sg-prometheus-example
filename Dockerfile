@@ -24,6 +24,8 @@ ADD	run.sh install.sh ${HOME}/
 
 RUN	${HOME}/install.sh
 
+ADD	config/elasticsearch.yml ${ES_HOME}/config/
+
 WORKDIR	${HOME}
 USER	1000
 CMD	["sh", "/opt/app-root/src/run.sh"]
