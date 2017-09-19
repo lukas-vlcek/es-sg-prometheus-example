@@ -2,6 +2,8 @@
 
 set -ex
 
+# Give Elasticsearch some time to start up
 sleep 15
+
 curl localhost:9200
 curl localhost:9200/_prometheus/metrics | tail -n 20
