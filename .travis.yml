@@ -4,4 +4,6 @@ services:
   - docker
 
 script:
-  - test.sh
+  - docker build -t elasticsearch -f Dockerfile .
+  - docker run -p 9200:9200 elasticsearch
+  - ./test.sh
