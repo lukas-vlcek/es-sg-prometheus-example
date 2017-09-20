@@ -17,6 +17,8 @@ ENV	ES_VER=2.4.4 \
 RUN	yum install -y --setopt=tsflags=nodocs \
 		wget \
 		unzip \
+		git \
+		openssl \
 		java-${JAVA_VER}-openjdk-headless && \
 	yum clean all
 

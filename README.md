@@ -1,1 +1,1 @@
-Travis status: ![](https://secure.travis-ci.org/lukas-vlcek/es-sg-prometheus-example.png)
+![](https://secure.travis-ci.org/lukas-vlcek/es-sg-prometheus-example.png)
