@@ -22,7 +22,7 @@ RUN	yum install -y --setopt=tsflags=nodocs \
 		java-${JAVA_VER}-openjdk-headless && \
 	yum clean all
 
-ADD	run.sh install.sh ${HOME}/
+ADD	run.sh install.sh configure_sg.sh ${HOME}/
 
 RUN	${HOME}/install.sh
 
