@@ -17,7 +17,8 @@ mv /tmp/elasticsearch-${ES_VER} ${ES_HOME}
 
 # Install SearchGuard plugins (SSL, SG2)
 ${ES_HOME}/bin/plugin install -b com.floragunn/search-guard-ssl/${SG_SSL_VER}
-#${ES_HOME}/bin/plugin install -b com.floragunn/search-guard-2/${SG_VER}
+${ES_HOME}/bin/plugin install -b com.floragunn/search-guard-2/${SG_VER}
+chmod +x ${ES_HOME}/plugins/search-guard-2/tools/sgadmin.sh
 
 # Configure Search Guard
 ${HOME}/configure_sg.sh
@@ -25,8 +26,4 @@ ${HOME}/configure_sg.sh
 # Install Prometheus exporter plugin
 ${ES_HOME}/bin/plugin install -b https://github.com/vvanholl/elasticsearch-prometheus-exporter/releases/download/${PROMETHEUS_EXPORTER_VER}/elasticsearch-prometheus-exporter-${PROMETHEUS_EXPORTER_VER}.zip
 
-#mkdir /elasticsearch
-#mkdir -p ${ES_CONF}
-#chmod -R og+w ${ES_CONF} ${ES_HOME} ${HOME} /elasticsearch
-#chmod -R o+rx /etc/elasticsearch
-#chmod +x ${ES_HOME}/plugins/openshift-elasticsearch/sgadmin.sh
+chmod -R og+w ${ES_CONF} ${ES_HOME} ${HOME}
