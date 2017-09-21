@@ -25,8 +25,8 @@ ${HOME}/configure_sg.sh
 # Install Prometheus exporter plugin
 ${ES_HOME}/bin/plugin install -b https://github.com/vvanholl/elasticsearch-prometheus-exporter/releases/download/${PROMETHEUS_EXPORTER_VER}/elasticsearch-prometheus-exporter-${PROMETHEUS_EXPORTER_VER}.zip
 
-mkdir /elasticsearch
-mkdir -p ${ES_CONF}
-chmod -R og+w ${ES_CONF} ${ES_HOME} ${HOME} /elasticsearch
+#mkdir /elasticsearch
+#mkdir -p ${ES_CONF}
+#chmod -R og+w ${ES_CONF} ${ES_HOME} ${HOME} /elasticsearch
 #chmod -R o+rx /etc/elasticsearch
 #chmod +x ${ES_HOME}/plugins/openshift-elasticsearch/sgadmin.sh
