@@ -62,3 +62,7 @@ sg_kibana4_testindex:
 sg_own_index:
   users:
     - '*'
+
+sg_role_prometheus:
+  users:
+    - 'prometheus'
