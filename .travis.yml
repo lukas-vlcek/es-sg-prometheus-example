@@ -6,4 +6,5 @@ services:
 script:
   - docker build -t elasticsearch -f Dockerfile .
   - docker run -d -p 9200:9200 elasticsearch
+  - sleep 15
   - ./test.sh
