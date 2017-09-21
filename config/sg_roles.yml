@@ -186,4 +186,6 @@ sg_own_index:
 
 sg_role_prometheus:
   cluster:
-    - "*"
+    - cluster:monitor/_prometheus/metrics 
+#  cluster:
+#    - "*"
