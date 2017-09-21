@@ -2,5 +2,5 @@
 
 set -ex
 
-curl --insecure https://localhost:9200
-curl --insecure https://localhost:9200/_prometheus/metrics | tail -n 20
+curl -sS --insecure -u kirk:kirk https://localhost:9200
+curl -sS --insecure -u kirk:kirk https://localhost:9200/_prometheus/metrics | tail -n 20

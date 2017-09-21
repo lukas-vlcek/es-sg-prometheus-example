@@ -22,12 +22,13 @@ RUN	yum install -y --setopt=tsflags=nodocs \
 		java-${JAVA_VER}-openjdk-headless && \
 	yum clean all
 
-ADD	run.sh install.sh configure_sg.sh ${HOME}/
+ADD	start_es.sh install.sh configure_sg.sh initialize_sg.sh ${HOME}/
 
 RUN	${HOME}/install.sh
 
 ADD	config/elasticsearch.yml ${ES_HOME}/config/
+ADD	config/sg_*.yml ${ES_HOME}/config/
 
 WORKDIR	${HOME}
 USER	1000
-CMD	["sh", "/opt/app-root/src/run.sh"]
+CMD	["sh", "/opt/app-root/src/start_es.sh"]
