@@ -5,6 +5,7 @@ services:
 
 script:
   - docker build -t elasticsearch -f Dockerfile .
-  - docker run -d -p 9200:9200 elasticsearch
-  - sleep 20 
+  - CONT_ID=`docker run -d -p 9200:9200 elasticsearch`
+  - sleep 30 
+  - docker exec ${CONT_ID} tail /usr/share/java/elasticsearch/logs/elasticsearch.log
   - ./test.sh
