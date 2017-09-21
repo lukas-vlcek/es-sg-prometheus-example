@@ -16,7 +16,7 @@ mv /tmp/elasticsearch-${ES_VER} ${ES_HOME}
 
 
 # Install SearchGuard plugins (SSL, SG2)
-#${ES_HOME}/bin/plugin install -b com.floragunn/search-guard-ssl/${SG_SSL_VER}
+${ES_HOME}/bin/plugin install -b com.floragunn/search-guard-ssl/${SG_SSL_VER}
 #${ES_HOME}/bin/plugin install -b com.floragunn/search-guard-2/${SG_VER}
 
 # Configure Search Guard
