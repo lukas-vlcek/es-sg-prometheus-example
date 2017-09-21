@@ -2,6 +2,8 @@
 
 set -ex
 
+sleep 15
+
 ### Initialize Search Guard 2 plugin
 cd ${ES_HOME}
 plugins/search-guard-2/tools/sgadmin.sh \

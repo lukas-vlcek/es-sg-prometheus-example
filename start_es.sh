@@ -2,11 +2,8 @@
 
 set -ex
 
-exec ${ES_HOME}/bin/elasticsearch -d \
+./initialize_sg.sh &
+
+exec ${ES_HOME}/bin/elasticsearch \
 	--path.conf=${ES_CONF} \
 	--security.manager.enabled false
-
-# Give ES some time to start
-sleep 15
-
-./initialize_sg.sh
