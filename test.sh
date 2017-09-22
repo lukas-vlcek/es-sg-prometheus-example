@@ -4,6 +4,7 @@ set -ex
 
 # Access REST API as an 'admin'
 curl -sS --insecure -u admin:admin https://localhost:9200
+curl -sS --insecure -u admin:admin https://localhost:9200/_cat/indices
 curl -sS --insecure -u admin:admin https://localhost:9200/_prometheus/metrics | tail -n 5
 echo
 

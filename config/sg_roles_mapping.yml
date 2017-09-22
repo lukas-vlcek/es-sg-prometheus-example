@@ -4,8 +4,8 @@ sg_all_access:
 
 sg_role_prometheus:
   users:
-    - 'prometheus'
+    - prometheus
 
 sg_role_foo:
   users:
-    - 'foo'
+    - foo
