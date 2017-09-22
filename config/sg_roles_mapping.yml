@@ -41,9 +41,9 @@ sg_all_access:
     - admin
     - adm
     
-sg_public:
-  users:
-    - '*'
+#sg_public:
+#  users:
+#    - '*'
     
 sg_readall:
   users:
@@ -59,9 +59,9 @@ sg_kibana4_testindex:
   users:
     - test
 
-sg_own_index:
-  users:
-    - '*'
+#sg_own_index:
+#  users:
+#    - '*'
 
 sg_role_prometheus:
   users:
