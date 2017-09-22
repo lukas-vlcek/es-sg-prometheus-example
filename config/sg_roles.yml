@@ -26,7 +26,5 @@ sg_role_prometheus:
 #    - cluster:monitor/_prometheus/metrics
 
 sg_role_foo:
-  indices:
-    - indices:admin/*
-#  cluster:
-#    - cluster:monitor/nodes/stats
+  cluster:
+    - cluster:monitor/cluster/health
