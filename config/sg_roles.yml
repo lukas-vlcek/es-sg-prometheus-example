@@ -189,3 +189,9 @@ sg_role_prometheus:
     - cluster:monitor/_prometheus/metrics 
 #  cluster:
 #    - "*"
+
+sg_role_foo:
+  indices:
+    'foo':
+      '*':
+        - ALL

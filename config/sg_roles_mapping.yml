@@ -66,3 +66,7 @@ sg_own_index:
 sg_role_prometheus:
   users:
     - 'prometheus'
+
+sg_role_foo:
+  users:
+    - 'foo'

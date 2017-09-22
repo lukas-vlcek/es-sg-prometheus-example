@@ -45,4 +45,7 @@ test:
 prometheus:
   hash: $2a$12$1HqHxm3QTfzwkse7vwzhFOV4gDv787cZ8BwmCwNEyJhn0CZoo8VVu
   #password is: test
+foo:
+  hash: $2a$12$1HqHxm3QTfzwkse7vwzhFOV4gDv787cZ8BwmCwNEyJhn0CZoo8VVu
+  #password is: test
 
