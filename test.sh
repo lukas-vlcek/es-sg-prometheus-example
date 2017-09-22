@@ -23,7 +23,7 @@ curl -sS --insecure -u test:test https://localhost:9200/_cluster/health
 curl -sS --insecure -u test:test https://localhost:9200/_prometheus/metrics | tail -n 5
 echo
 
-echo Access REST API as 'john' user (non existing user)
+echo Access REST API as 'john' user 
 curl -sS --insecure -u john:doe https://localhost:9200/_cluster/health
 curl -sS --insecure -u john:doe https://localhost:9200/_prometheus/metrics | tail -n 5
 echo
