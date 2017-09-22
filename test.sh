@@ -4,10 +4,21 @@ set -ex
 
 # Access REST API as an 'admin'
 curl -sS --insecure -u admin:admin https://localhost:9200
-curl -sS --insecure -u admin:admin https://localhost:9200/_prometheus/metrics | tail -n 10
+curl -sS --insecure -u admin:admin https://localhost:9200/_prometheus/metrics | tail -n 5
+echo
 
-# Access promtheus REST API as 'prometheus' user (is allowed)
-curl -sS --insecure -u prometheus:test https://localhost:9200/_prometheus/metrics | tail -n 10
+# Access promtheus REST API as 'prometheus' user
+curl -sS --insecure -u prometheus:test https://localhost:9200/_prometheus/metrics | tail -n 5
+echo
 
-# Access prometheus REST API as 'foo' user (is not allowed)
-curl -sS --insecure -u foo:test https://localhost:9200/_prometheus/metrics | tail -n 10
+# Access prometheus REST API as 'foo' user
+curl -sS --insecure -u foo:test https://localhost:9200/_prometheus/metrics | tail -n 5
+echo
+
+# Access prometheus REST API as 'test' user
+curl -sS --insecure -u test:test https://localhost:9200/_prometheus/metrics | tail -n 5
+echo
+
+# Access prometheus REST API as 'john' user (non existing user)
+curl -sS --insecure -u john:doe https://localhost:9200/_prometheus/metrics | tail -n 5
+echo
