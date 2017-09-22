@@ -13,4 +13,4 @@ script:
   - sleep 30 
   - docker exec ${CONT_ID} tail -n 20 /usr/share/java/elasticsearch/logs/elasticsearch.log
   - ./test.sh
-  - docker exec ${CONT_ID} tail -n 50 /usr/share/java/elasticsearch/logs/elasticsearch.log
+  - docker exec ${CONT_ID} tail -n 1000 /usr/share/java/elasticsearch/logs/elasticsearch.log
