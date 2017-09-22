@@ -14,6 +14,8 @@ ENV	ES_VER=2.4.4 \
 	HOME=/opt/app-root/src \
 	TMP_DIR=/tmp
 
+ARG	PROMETHEUS_PLUGIN=true
+
 RUN	yum install -y --setopt=tsflags=nodocs \
 		wget \
 		unzip \
