@@ -2,14 +2,6 @@ sg_all_access:
   users:
     - admin
 
-#sg_public:
-#  users:
-#    - '*'
-    
-#sg_own_index:
-#  users:
-#    - '*'
-
 sg_role_prometheus:
   users:
     - 'prometheus'
