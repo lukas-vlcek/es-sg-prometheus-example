@@ -1,6 +1,6 @@
-sg_all_access:
-  users:
-    - admin
+#sg_all_access:
+#  users:
+#    - admin
 
 sg_role_prometheus:
   users:

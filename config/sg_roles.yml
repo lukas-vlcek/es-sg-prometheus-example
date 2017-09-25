@@ -12,13 +12,13 @@
 
 # Allows everything
 # but not changes to searchguard config/index
-sg_all_access:
-  cluster:
-    - '*'
-  indices:
-    '*':
-      '*':
-        - '*'
+#sg_all_access:
+#  cluster:
+#    - '*'
+#  indices:
+#    '*':
+#      '*':
+#        - '*'
 
 sg_role_prometheus:
   cluster:
