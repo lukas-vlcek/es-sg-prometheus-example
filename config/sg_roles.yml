@@ -23,7 +23,7 @@ sg_all_access:
 sg_role_prometheus:
   cluster:
     - cluster:monitor/nodes/stats
-#    - cluster:monitor/_prometheus/metrics
+    - cluster:monitor/cluster/health
 
 sg_role_foo:
   cluster:
