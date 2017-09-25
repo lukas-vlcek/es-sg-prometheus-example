@@ -29,6 +29,7 @@ ADD	start_es.sh install.sh configure_sg.sh initialize_sg.sh ${HOME}/
 RUN	${HOME}/install.sh
 
 ADD	config/elasticsearch.yml ${ES_HOME}/config/
+ADD	config/logging.yml ${ES_HOME}/config/
 ADD	config/sg_*.yml ${ES_HOME}/config/
 
 WORKDIR	${HOME}
