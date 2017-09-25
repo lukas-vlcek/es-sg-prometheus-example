@@ -51,7 +51,7 @@ searchguard:
     http:
       anonymous_auth_enabled: false
       xff:
-        enabled: true
+        enabled: false
         #internalProxies: '192\.168\.0\.10|192\.168\.0\.11' # regex pattern
         internalProxies: '.*' # trust all internal proxies, regex pattern
         remoteIpHeader:  'x-forwarded-for'
