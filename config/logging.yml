@@ -12,7 +12,7 @@ logger:
   com.floragunn: DEBUG
 
   # Prometheus exporter
-  org.compuscene: TRACE
+  org.elasticsearch.rest.prometheu: TRACE
 
   # reduce the logging for aws, too much is logged under the default INFO
   com.amazonaws: WARN
