@@ -11,8 +11,10 @@ git config --global user.name "Your Name"
 ### Configure Search Guard SSL plugin
 ACTUAL_DIR=`pwd`
 cd ${TMP_DIR}
-git clone https://github.com/floragunncom/search-guard-ssl.git -b v${SG_SSL_VER}
-cd search-guard-ssl/example-pki-scripts/
+git clone https://github.com/floragunncom/search-guard-ssl.git # -b v${SG_SSL_VER}
+cd search-guard-ssl
+git checkout tags/ves-2.4.4-21
+cd example-pki-scripts/
 ./example.sh
 
 # for the searchguard.ssl.transport.keystore
