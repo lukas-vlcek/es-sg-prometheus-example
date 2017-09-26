@@ -1,17 +1,3 @@
-#<sg_role_name>:
-#  cluster:
-#    - '<permission>'
-#  indices:
-#    '<indexname or alias>':
-#      '<type>':  
-#        - '<permission>'
-#      _dls_: '<querydsl query>'
-#      _fls_:
-#        - '<field>'
-#        - '<field>'
-
-# Allows everything
-# but not changes to searchguard config/index
 #sg_all_access:
 #  cluster:
 #    - '*'
