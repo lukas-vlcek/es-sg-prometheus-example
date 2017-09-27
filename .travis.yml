@@ -5,7 +5,7 @@ services:
 
 env:
   - PROMETHEUS_PLUGIN=true
-  - PROMETHEUS_PLUGIN=false
+#  - PROMETHEUS_PLUGIN=false
 
 script:
   - docker build --build-arg PROMETHEUS_PLUGIN=${PROMETHEUS_PLUGIN} -t elasticsearch -f Dockerfile .

@@ -13,4 +13,5 @@ sg_role_prometheus:
 
 sg_role_foo:
   cluster:
-    - cluster:monitor/health
+#    - cluster:monitor/health
+    - cluster:monitor/nodes/stats
